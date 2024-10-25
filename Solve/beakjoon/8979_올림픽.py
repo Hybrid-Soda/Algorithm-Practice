@@ -1,4 +1,4 @@
-# 8979 올림픽
+# 8979 올림픽 / 구현, 정렬
 
 N, K = map(int, input().split())
 m_list = []
