@@ -1,5 +1,10 @@
-2 2
-gt26cw
-1211train
-kiwoom,lottegiant
-kbo
+9
+0
+12345678
+1
+2
+0
+0
+0
+0
+32
