@@ -22,5 +22,3 @@ while queue:
 
             distance[next] = next_dist
             heappush(queue, (next_dist, next))
-
-print(distance[k])
