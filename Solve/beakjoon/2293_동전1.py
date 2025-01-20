@@ -1,4 +1,4 @@
-# 2293 동전 1
+# 2293 동전 1 / 다이나믹 프로그래밍
 
 n, k = map(int, input().split())
 coins = [int(input()) for _ in range(n)]
