@@ -3,7 +3,7 @@
 n = int(input())
 MOD = 1000000000
 
-# dp[length][last_digit][bitmask] : 길이, 마지막 숫자, 사용된 숫자를 비트마스크로 나타낸 경우의 계단 수의 개수
+# dp[자리 수][마지막 숫자][사용된 숫자들의 비트 값] = 계단 수의 개수
 dp = [[[0] * (1<<10) for _ in range(10)] for _ in range(n+1)]
 
 # 길이가 1인 경우 초기화 (각 숫자 1~9는 각각 하나의 계단 수를 이룬다)
@@ -14,11 +14,16 @@ for d in range(1, 10):
 for l in range(2, n+1):
     for d in range(10):
         for b in range(1<<10):
+            # 이전까지 사용된 숫자 + 현재 사용된 숫자 (OR연산)
             nb = b | (1<<d)
-            if d > 0:
+
+            if d > 0: # 마지막 숫자가 0보다 크면
+                # 이전 숫자로 d-1이 올 수 있음
                 dp[l][d][nb] += dp[l-1][d-1][b]
                 dp[l][d][nb] %= MOD
-            if d < 9:
+
+            if d < 9: # 마지막 숫자가 9보다 작으면
+                # 이전 숫자로 d+1이 올 수 있음
                 dp[l][d][nb] += dp[l-1][d+1][b]
                 dp[l][d][nb] %= MOD
 
@@ -29,4 +34,3 @@ for d in range(10):
     result %= MOD
 
 print(result)
-
