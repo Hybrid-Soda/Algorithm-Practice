@@ -2,20 +2,48 @@
 
 from collections import deque
 
-def get_tree_cnt(graph):
-    pass
+
+def check_tree(node, graph, visited):
+    queue = deque([(node, 0)])  # 현재 노드, 부모 노드
+
+    while queue:
+        now, parent = queue.popleft()
+
+        for next in graph[now]:
+            if not visited[next]:
+                visited[next] = 1
+                queue.append((next, now))
+            # 이미 방문한 노드가 현재 노드의 부모 노드가 아니면 순환
+            elif next != parent:
+                return False
+
+    return True
 
 
-def main(tc):
+def get_tree_cnt(n, graph):
+    tree_cnt = 0
+    visited = [0] * (n+1)
+
+    for node in range(1, n+1):
+        if not visited[node]:
+            visited[node] = 1
+            tree_cnt += check_tree(node, graph, visited)
+
+    return tree_cnt
+
+
+for tc in range(1, int(10e+9)):
     n, m = map(int, input().split())
     graph = [[] for _ in range(n+1)]
+    
+    if (n, m) == (0, 0): break
 
     for _ in range(m):
         a, b = map(int, input().split())
         graph[a].append(b)
         graph[b].append(a)
     
-    tree_cnt = get_tree_cnt(graph)
+    tree_cnt = get_tree_cnt(n, graph)
 
     if tree_cnt <= 0:
         print(f"Case {tc}: No trees.")
@@ -23,10 +51,3 @@ def main(tc):
         print(f"Case {tc}: There is one tree.")
     else:
         print(f"Case {tc}: A forest of {tree_cnt} trees.")
-
-
-for tc in range(int(10e+9)):
-    try:
-        main(tc)
-    except:
-        break
