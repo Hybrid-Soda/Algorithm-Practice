@@ -1,13 +1,11 @@
 # 28702 FizzBuzz / 수학, 문자열
 
-a, b, c = input(), input(), input()
+nums = [input() for _ in range(3)]
 
-if a.isdecimal():
-    d = int(a) + 3
-elif b.isdecimal():
-    d = int(b) + 2
-elif c.isdecimal():
-    d = int(c) + 1
+for i in range(3):
+    if nums[i].isdecimal():
+        d = int(nums[i]) + 3 - i
+        break
 
 if d % 3 and d % 5:
     print(d)
