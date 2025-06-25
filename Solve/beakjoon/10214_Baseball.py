@@ -1,11 +1,15 @@
-# 10214 Baseball
+# 10214 Baseball / 구현
 
-for i in range(int(input())):
-    y, k = map(int, input().split())
+for _ in range(int(input())):
+    Y = K = 0
+
+    for _ in range(9):
+        y, k = map(int, input().split())
+        Y += y; K += k
     
-    if y > k:
+    if Y > K:
         print("Yonsei")
-    elif y < k:
+    elif Y < K:
         print("Korea")
     else:
         print("Draw")
