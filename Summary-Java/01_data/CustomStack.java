@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
-public class Stack<E> {
+public class CustomStack<E> {
 
     private final ArrayList<E> stack = new ArrayList<>();
 
     // 원소 추가
     public void push(E elem) {
+        if (elem == null)
+            throw new NullPointerException();
         stack.add(elem);
     }
 
@@ -24,9 +26,8 @@ public class Stack<E> {
     public E peek() {
         int len = size();
 
-        if (len == 0) {
+        if (len == 0)
             throw new EmptyStackException();
-        }
 
         return stack.get(len - 1);
     }
@@ -39,5 +40,10 @@ public class Stack<E> {
     // 크기 체크
     public int size() {
         return stack.size();
+    }
+
+    // 모든 원소 제거
+    public void clear() {
+        stack.clear();
     }
 }

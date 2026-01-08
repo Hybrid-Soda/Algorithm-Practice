@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class DataTypes {
-    public static void mainDataTypes(String[] args) throws IOException {
+    private static void mainDataTypes(String[] args) throws IOException {
         /// 기본 자료형
         // 논리형
         boolean boolean1 = true;
