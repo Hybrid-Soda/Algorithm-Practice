@@ -1,7 +1,7 @@
 // 1829 카카오 프렌즈 컬러링북
 import java.util.*;
 
-class Solution {
+class 카카오_프렌즈_컬러링북_1829 {
     public int[] solution(int m, int n, int[][] picture) {
         int[] di = {0, 1, 0, -1};
         int[] dj = {1, 0, -1, 0};

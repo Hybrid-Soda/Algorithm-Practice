@@ -1,4 +1,4 @@
-class Solution {
+class 자릿수_더하기_120906 {
     public int solution(int n) {
         int answer = 0;
 

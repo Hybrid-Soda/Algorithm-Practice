@@ -1,4 +1,4 @@
-class Solution {
+class n개_간격의_원소들_181888 {
     public int[] solution(int[] num_list, int n) {
         int flag = num_list.length % n == 0 ? 0 : 1;
         int[] answer = new int[num_list.length / n + flag];

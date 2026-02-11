@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-class Solution {
+class 제일_작은_수_제거하기_12935 {
     public int[] solution(int[] arr) {
 
         if (arr.length <= 1) {

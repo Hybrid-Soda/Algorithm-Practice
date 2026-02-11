@@ -1,4 +1,4 @@
-class Solution {
+class 이어_붙인_수_181928 {
     public int solution(int[] num_list) {
         int odd = 0;
         int even = 0;

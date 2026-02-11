@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-class Solution {
+class 자연수_뒤집어_배열로_만들기_12932 {
     public ArrayList<Integer> solution(long n) {
         ArrayList<Integer> answer = new ArrayList<>();
         

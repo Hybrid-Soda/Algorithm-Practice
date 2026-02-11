@@ -1,6 +1,6 @@
 // 12940 최대공약수와 최소공배수
 
-class Solution {
+class 최대공약수와_최소공배수_12940 {
     public int[] solution(int n, int m) {
         return new int[] {gcd(n, m), lcm(n, m)};
     }

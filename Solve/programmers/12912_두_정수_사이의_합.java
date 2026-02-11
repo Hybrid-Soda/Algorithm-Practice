@@ -1,6 +1,6 @@
 // 12912 두 정수 사이의 합
 
-class Solution {
+class 두_정수_사이의_합_12912 {
     public long solution(int a, int b) {
         return sum(Math.min(a, b), Math.max(a, b));
     }

@@ -1,4 +1,4 @@
-class Solution {
+class 배열의_유사도_120903 {
     public int solution(String[] s1, String[] s2) {
         int answer = 0;
         for (String str1: s1) {

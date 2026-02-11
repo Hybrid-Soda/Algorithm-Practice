@@ -1,4 +1,4 @@
-class Solution {
+class 배열의_평균값_120817 {
     public double solution(int[] numbers) {
         double sum = 0;
         for (int number : numbers) {

@@ -1,6 +1,6 @@
 // 12928 약수의 합
 
-class Solution {
+class 약수의합_12928 {
     public int solution(int n) {
         int answer = 0;
 

@@ -1,6 +1,6 @@
 // 70128 내적
 
-class Solution {
+class 내적_70128 {
     public int solution(int[] a, int[] b) {
         int dot = 0;
 

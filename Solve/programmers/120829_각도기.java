@@ -1,4 +1,4 @@
-class Solution {
+class 각도기_120829 {
     public int solution(int angle) {
         if (angle < 90) {
             return 1;

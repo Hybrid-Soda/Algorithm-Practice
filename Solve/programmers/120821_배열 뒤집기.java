@@ -1,4 +1,4 @@
-class Solution {
+class 배열_뒤집기_120821 {
     public int[] solution(int[] num_list) {
         int[] answer = new int[num_list.length];
 

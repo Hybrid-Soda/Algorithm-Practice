@@ -1,6 +1,6 @@
 // 12934 정수 제곱근 판별
 
-class Solution {
+class 정수_제곱근_판별_12934 {
     public long solution(long n) {
         double sqrtN = Math.sqrt(n);
 

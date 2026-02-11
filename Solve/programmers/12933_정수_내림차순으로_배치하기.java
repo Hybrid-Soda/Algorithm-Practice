@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-class Solution {
+class 정수_내림차순으로_배치하기_12933 {
     public long solution(long n) {
         
         // String 배열로 변환

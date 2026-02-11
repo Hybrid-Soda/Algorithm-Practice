@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-class Solution {
+class _3진법_뒤집기_68935 {
     public int solution(int n) {
         return getDecimal(getReversedTernary(n));
     }

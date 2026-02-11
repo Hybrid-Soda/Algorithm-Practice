@@ -1,6 +1,6 @@
 // 12947 하샤드 수
 
-class Solution {
+class 하샤드수_12947 {
     public boolean solution(int x) {
         double dividend = x;
         int divisor = 0;

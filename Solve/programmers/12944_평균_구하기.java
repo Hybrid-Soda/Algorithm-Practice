@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-class Solution {
+class 평균_구하기_12944 {
     public double solution(int[] arr) {
         return Arrays.stream(arr).average().getAsDouble();
     }

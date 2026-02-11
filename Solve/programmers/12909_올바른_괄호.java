@@ -2,7 +2,7 @@
 
 import java.util.Stack;
 
-class Solution {
+class 올바른_괄호_12909 {
     boolean solution(String s) {
         Stack<Character> stack = new Stack<>();
 

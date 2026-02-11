@@ -1,4 +1,4 @@
-class Solution {
+class 옹알이_1_120956 {
     public int solution(String[] babbling) {
         int answer = 0;
 

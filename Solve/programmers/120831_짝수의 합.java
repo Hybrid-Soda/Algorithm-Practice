@@ -1,4 +1,4 @@
-class Solution {
+class 짝수의_합_120831 {
     public int solution(int n) {
         int answer = 0;
 

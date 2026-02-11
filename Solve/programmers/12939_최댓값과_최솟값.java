@@ -1,6 +1,6 @@
 // 12939 최댓값과 최솟값
 
-class Solution {
+class 최댓값과_최솟값_12939 {
     public String solution(String s) {
         String[] sList = s.split(" ");
 

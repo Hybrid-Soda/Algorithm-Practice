@@ -1,6 +1,6 @@
 // 12903 가운데 글자 가져오기
 
-class Solution {
+class 가운데_글자_가져오기_12903 {
     public String solution(String s) {
         int len = s.length();
         

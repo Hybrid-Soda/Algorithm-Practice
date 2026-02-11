@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-class Solution {
+class 나누어_떨어지는_숫자_배열_12910 {
     public int[] solution(int[] arr, int divisor) {
         int[] answer = Arrays
             .stream(arr)

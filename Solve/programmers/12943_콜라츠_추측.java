@@ -1,6 +1,6 @@
 // 12943 콜라츠 추측
 
-class Solution {
+class 콜라츠_추측_12943 {
     public int solution(long num) {
         
         for (int i = 0; i < 500; i++) {

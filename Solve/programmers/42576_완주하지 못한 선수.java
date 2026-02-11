@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution {
+class 완주하지_못한_선수_42576 {
     public String solution(String[] participant, String[] completion) {
         HashMap<String, Integer> pMap = new HashMap<>();
         

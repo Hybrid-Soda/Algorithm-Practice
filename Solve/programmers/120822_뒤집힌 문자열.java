@@ -1,4 +1,4 @@
-class Solution {
+class 뒤집힌_문자열_120822 {
     public String solution(String my_string) {
         String answer = "";
 

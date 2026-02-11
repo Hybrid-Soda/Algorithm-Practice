@@ -1,6 +1,6 @@
 // 12931 자릿수 더하기
 
-class Solution {
+class 자릿수_더하기_12931 {
     private int solution(int n) {
         int answer = 0;
 
